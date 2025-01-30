@@ -30,7 +30,6 @@ XPATH_BUTTON_STEP_5 = '//*[@id="wrapper"]/div[5]/table/tbody/tr/td/div/div[2]/fo
 XPATH_TRACK_AREA = '//*[@id="wrapper"]/div[5]/table/tbody/tr/td/div/div[2]/form/table[2]/tbody'
 
 CONTENT_FILE = 'content_file.txt'
-TO_EMAIL = 'hugopinagarcia@icloud.com'
 
 
 def get_website_content():
@@ -129,7 +128,7 @@ def send_email(subject, body):
             smtp_ssl=smtp_settings["use_ssl"],
             smtp_starttls=smtp_settings["use_tls"]
         )
-        yag.send(to=TO_EMAIL, subject=subject, contents=body)
+        yag.send(to=EMAIL, subject=subject, contents=body)
 
 
 def main():
