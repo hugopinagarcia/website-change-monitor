@@ -109,7 +109,10 @@ def get_smtp_settings(email):
     else:
         print("Failed to fetch SMTP settings. Using default Gmail.")
         return {
-            "host": "smtp.gmail.com",
+            "host": "smtp.mail.me.com",
+            #"host": "smtp.gmail.com",          #Comment this out if you use Gmail
+            #"host": "smtp.mail.yahoo.com",     #Comment this out if you use Yahoo
+            #"host": "smtp-mail.outlook.com",   #Comment this out if you use Outlook
             "port": 587,
             "use_ssl": False,
             "use_tls": True
